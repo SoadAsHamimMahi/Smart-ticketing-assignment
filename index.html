@@ -24,7 +24,7 @@
 <body class="font-Raleway">
     <header class="w-4/5 mx-auto">
         <div>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 my-2 lg:my-5">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@
                         </div>
 
                     </div>
-                    <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
+                    <a class="btn btn-ghost text-xl lg:text-3xl font-extrabold">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -49,24 +49,24 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn btn-outline btn-success bg-green-100 px-7">Bus <img src="images/bus-icon.png"
+                    <a class="btn btn-outline btn-success bg-green-100 px-3 lg:px-7">Bus <img src="images/bus-icon.png"
                             alt=""></a>
                 </div>
             </div>
 
             <!-- Hero Section -->
             <div>
-                <div class="hero rounded-2xl h-[550px]"
+                <div class="hero rounded-2xl bg-cover"
                     style="background-image: url(images/banner.png); background-repeat: no-repeat;">
                     <div class="hero-overlay bg-opacity-10"></div>
                     <div class="hero-content text-center text-neutral-content">
-                        <div class="max-w-screen-md">
-                            <h1 class="mb-5 text-6xl text-white font-bold">End-to-End Travel with <br><span
+                        <div class="max-w-screen-md my-4 lg:my-20">
+                            <h1 class=" mb-2 lg:mb-5 text-2xl lg:text-6xl text-white font-bold">End-to-End Travel with <br><span
                                     class="text-[#1DD100]">P Paribahan</span></h1>
-                            <p class="mb-7 text-white w-3/4 mx-auto">Yes, you can run unit tests and view the results
+                            <p class="mb-3 text-xs lg:text-lg lg:mb-7 text-white w-3/4 mx-auto">Yes, you can run unit tests and view the results
                                 directly within the app. The integrated testing features allow for a streamlined .</p>
 
-                            <button class="btn bg-[#1DD100] border-none text-xl text-black"><a href="#poribohon">Buy
+                            <button class="btn bg-[#1DD100] border-none text-xs lg:text-xl text-black"><a href="#poribohon">Buy
                                     Tickets</a></button>
                         </div>
                     </div>
@@ -77,12 +77,12 @@
 
     <main>
         <!-- Best offers section -->
-        <section class="w-4/5 mx-auto my-28">
+        <section class="w-4/5 mx-auto my-9 lg:my-28">
 
-            <h1 class="text-4xl font-bold text-center text-black mb-12">Best offers for you</h1>
+            <h1 class="text-2xl lg:text-4xl font-bold text-center text-black mb-12">Best offers for you</h1>
 
-            <div class="flex justify-between text-black">
-                <div class="bg-[#FFBF0F] flex w-[48%] justify-between rounded-3xl">
+            <div class="flex flex-col lg:flex-row justify-between text-black gap-3">
+                <div class="bg-[#FFBF0F] flex lg:w-[48%] justify-between rounded-3xl">
                     <div class="py-12 px-12">
                         <h2 class="text-4xl font-extrabold text-black">15% OFF</h2>
                         <p class="text-xl font-bold my-2 opacity-80">on your next purchase</p>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#F78C9C] flex w-1/2 justify-between rounded-3xl">
+                <div class="bg-[#F78C9C] flex lg:w-1/2 justify-between rounded-3xl">
                     <div class="py-12 px-12">
                         <h2 class="text-4xl font-extrabold text-black">20% OFF</h2>
                         <p class="text-xl font-bold my-2 opacity-80">on your next purchase</p>
@@ -115,19 +115,17 @@
                 </div>
             </div>
 
-            <button class="btn btn-outline btn-success flex justify-center mt-16 mx-auto">See All Offers</button>
-            <div>
-
-            </div>
+            <button class="btn btn-outline btn-success flex justify-center mt-7 lg:mt-16 mx-auto">See All Offers</button>
+            
         </section>
 
         <!-- Ticket Section -->
 
-        <section id="poribohon" class="bg-[#F7F8F8] rounded-t-[88px]">
+        <section class="bg-[#F7F8F8] rounded-t-[88px]">
 
-            <div class="w-4/5 mx-auto my-28 pt-28">
-                <h1 class="text-4xl font-bold text-center text-black mt-12">P.H Paribahan</h1>
-                <p class="text-center text-black text-lg w-4/6 mx-auto mt-5">Yes, you can run unit tests and view the
+            <div id="poribohon" class="lg:w-4/5 mx-auto lg:mt-28 pt-3 lg:pt-28">
+                <h1 class="text-2xl lg:text-4xl font-bold text-center text-black mt-12">P.H Paribahan</h1>
+                <p class="text-center text-black text-base lg:text-lg w-4/6 mx-auto mt-5">Yes, you can run unit tests and view the
                     results directly within the app. The integrated testing features allow for a streamlined .</p>
 
                 <!-- Buss name and seats -->
@@ -137,12 +135,12 @@
                         <div class="w-3/4 p-8">
 
                             <div class="flex justify-between">
-                                <div class="flex justify-between">
+                                <div class="flex justify-between gap-3">
                                     <div>
                                         <img src="images/bus-logo.png" alt="">
                                     </div>
                                     <div>
-                                        <h3>Greenline Paribahan</h3>
+                                        <h3 class="text-3xl font-bold text-black">Greenline Paribahan</h3>
                                         Coach-009-WEB ! AC_Business
                                     </div>
                                 </div>
@@ -202,9 +200,11 @@
                             <img src="images/info-devider.png" alt="">
                         </div>
 
-                        <div class="flex items-center justify-center">
-                            <div class="flex flex-col w-full content-center text-center">
+                        <div class="flex">
+                            <div class="flex flex-col w-full justify-center items-center">
+                               <div class="mb-6">
                                 <img class="w-12" src="images/fare.png" alt="">
+                               </div>
                                 <p class="text-3xl font-bold">550 Taka</p>
                                 <p class="text-2xl">Per Seat</p>
                             </div>
@@ -325,7 +325,7 @@
                         <div class="bg-gray-50 rounded-2xl p-8 mb-4">
                             <div class="flex justify-between mb-4">
                                 <h6 class="text-lg font-inter font-semibold text-black">Seat <span id="totalTicket"
-                                        class="text-white bg-green-500 px-2 rounded-md">0</span></h6>
+                                        class="text-white bg-[#1DD100] px-2 rounded-md">0</span></h6>
                                 <h6 class="text-lg font-inter font-semibold text-black">Class</h6>
                                 <h6 class="text-lg font-inter font-semibold text-black">Price</h6>
                             </div>
@@ -355,7 +355,7 @@
                                     class="input input-bordered join-item bg-white border-none w-full"
                                     placeholder="Have any coupon?" />
                                 <button id="cupon-btn"
-                                    class="btn join-item text-white text-lg font-semibold bg-green-500 ">Apply</button>
+                                    class="btn join-item text-white text-lg font-semibold bg-[#1DD100] ">Apply</button>
 
                             </div>
                             <ul class="text-red-500 font-bold" id="create-container1">
@@ -385,7 +385,7 @@
 
                         <div>
 
-                            <button class="btn bg-green-500 text-white text-xl font-extrabold rounded-2xl w-full mb-4"
+                            <button class="btn bg-[#1DD100] text-white text-xl font-extrabold rounded-2xl w-full mb-4"
                                 onclick="my_modal_5.showModal()">Next</button>
                             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                 <div class="modal-box flex flex-col justify-center align-middle items-center py-10">
@@ -421,39 +421,39 @@
 
             <section>
 
-
+                <footer class="footer bg-[#030712] text-white mt-28">
+                    <div class="w-4/5 mx-auto my-28">
+                        <div class="flex justify-between w-full">
+                            <div>
+                                <h2 class="text-4xl font-bold text-white">P-Ticket</h2>
+                                <p class="font-inter w-3/4 mt-4">P-Ticket is a digital platform to make your daily commuting better.
+                                </p>
+                            </div>
+                            <div>
+                                <h6 class="text-xl text-white">Download our app</h6>
+                                <div class="mt-4">
+                                    <img src="images/playstoree.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <hr class="border-dashed w-full text-white opacity-50 mt-12 mb-8">
+            
+            
+                        <div class="flex justify-between w-full opacity-65">
+                            <p>@all rights reserved, P-Ticket services limited.2024</p>
+                            <div class="flex gap-8">
+                                <p>Terms & condition</p>
+                                <p>Return & refund policy</p>
+                                <p>Privacy policy</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            
     </main>
 
-    <footer class="footer bg-[#030712] text-white">
-        <div class="w-4/5 mx-auto my-28">
-            <div class="flex justify-between w-full">
-                <div>
-                    <h2 class="text-4xl font-bold text-white">P-Ticket</h2>
-                    <p class="font-inter w-3/4 mt-4">P-Ticket is a digital platform to make your daily commuting better.
-                    </p>
-                </div>
-                <div>
-                    <h6 class="text-xl text-white">Download our app</h6>
-                    <div class="mt-4">
-                        <img src="images/playstoree.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <hr class="border-dashed w-full text-white opacity-50 mt-12 mb-8">
-
-
-            <div class="flex justify-between w-full opacity-65">
-                <p>@all rights reserved, P-Ticket services limited.2024</p>
-                <div class="flex">
-                    <p>Terms & condition</p>
-                    <p>Return & refund policy</p>
-                    <p>Privacy policy</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+   
     <script src="script.js"></script>
 </body>
 
