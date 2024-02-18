@@ -3,3 +3,7 @@ li{
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
+.raleway-font {
+    font-family: "Raleway", sans-serif;
+}
