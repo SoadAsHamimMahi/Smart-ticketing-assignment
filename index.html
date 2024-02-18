@@ -17,7 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -65,8 +65,9 @@
                                     class="text-[#1DD100]">P Paribahan</span></h1>
                             <p class="mb-7 text-white w-3/4 mx-auto">Yes, you can run unit tests and view the results
                                 directly within the app. The integrated testing features allow for a streamlined .</p>
-                            
-                            <button class="btn bg-[#1DD100] border-none text-xl text-black"><a href="poribohon" >Buy Tickets</a></button>
+
+                            <button class="btn bg-[#1DD100] border-none text-xl text-black"><a href="#poribohon">Buy
+                                    Tickets</a></button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +110,7 @@
                         <h2 class="text-3xl font-bold text-black">Couple <span
                                 class="text-xl font-bold text-black">20</span></h2>
                         <p class="my-2 opacity-65">Coupon Code</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -254,7 +255,26 @@
                                     <button class="btn all-btn">C1</button>
                                     <button class="btn all-btn">C2</button>
 
-                            
+                                    <button class="btn all-btn">D1</button>
+                                    <button class="btn all-btn">D2</button>
+
+                                    <button class="btn all-btn">E1</button>
+                                    <button class="btn all-btn">E2</button>
+
+                                    <button class="btn all-btn">F1</button>
+                                    <button class="btn all-btn">F2</button>
+
+                                    <button class="btn all-btn">G1</button>
+                                    <button class="btn all-btn">G2</button>
+
+                                    <button class="btn all-btn">H1</button>
+                                    <button class="btn all-btn">H2</button>
+
+                                    <button class="btn all-btn">I1</button>
+                                    <button class="btn all-btn">I2</button>
+
+                                    <button class="btn all-btn">J1</button>
+                                    <button class="btn all-btn">J2</button>
                                 </div>
 
                                 <div class="grid grid-cols-2 gap-4">
@@ -264,11 +284,33 @@
 
                                     <button class="btn all-btn">A3</button>
                                     <button class="btn all-btn">A4</button>
+
                                     <button class="btn all-btn">B3</button>
                                     <button class="btn all-btn">B4</button>
+
                                     <button class="btn all-btn">C3</button>
                                     <button class="btn all-btn">C4</button>
-                                
+
+                                    <button class="btn all-btn">D3</button>
+                                    <button class="btn all-btn">D4</button>
+
+                                    <button class="btn all-btn">E3</button>
+                                    <button class="btn all-btn">E4</button>
+
+                                    <button class="btn all-btn">F3</button>
+                                    <button class="btn all-btn">F4</button>
+
+                                    <button class="btn all-btn">G3</button>
+                                    <button class="btn all-btn">G4</button>
+
+                                    <button class="btn all-btn">H3</button>
+                                    <button class="btn all-btn">H4</button>
+
+                                    <button class="btn all-btn">I3</button>
+                                    <button class="btn all-btn">I4</button>
+
+                                    <button class="btn all-btn">J3</button>
+                                    <button class="btn all-btn">J4</button>
                                 </div>
                             </div>
                         </div>
@@ -280,67 +322,101 @@
                         <h3 class="text-black text-2xl font-semibold mb-4">Select Your Seat</h3>
                         <hr class="border-dashed text-gray-400 border-1 my-6">
 
-                    <div class="bg-gray-50 rounded-2xl p-8 mb-4">
-                        <div class="flex justify-between mb-4">
-                            <h6 class="text-lg font-inter font-semibold text-black">Seat <span id="totalTicket" class="text-white bg-green-500 px-2 rounded-md">0</span></h6>
-                            <h6 class="text-lg font-inter font-semibold text-black">Class</h6>
-                            <h6 class="text-lg font-inter font-semibold text-black">Price</h6>
-                        </div>
-                
-                        
+                        <div class="bg-gray-50 rounded-2xl p-8 mb-4">
+                            <div class="flex justify-between mb-4">
+                                <h6 class="text-lg font-inter font-semibold text-black">Seat <span id="totalTicket"
+                                        class="text-white bg-green-500 px-2 rounded-md">0</span></h6>
+                                <h6 class="text-lg font-inter font-semibold text-black">Class</h6>
+                                <h6 class="text-lg font-inter font-semibold text-black">Price</h6>
+                            </div>
+
+
                             <hr class="border-dashed text-gray-400 border-1 my-6">
-                        
-                        <div class="container" id="container">
-                            <ul class="" id="selected-container">
-                               
+
+                            <div class="container" id="container">
+                                <ul class="" id="selected-container">
+
+                                </ul>
+
+                            </div>
+
+                            <hr class="border-dashed text-gray-400 border-1 my-6">
+
+                            <div class="flex justify-between mb-4">
+                                <h6 class="text-lg inter-font font-semibold text-black">Total Price</h6>
+                                <h6 class="text-lg inter-font font-semibold text-black">BDT <span
+                                        id="total-Price">0</span></h6>
+
+
+                            </div>
+                            <div id="cupon-input1" class="mb-4 join w-full">
+
+                                <input id="cupon-input" type="text"
+                                    class="input input-bordered join-item bg-white border-none w-full"
+                                    placeholder="Have any coupon?" />
+                                <button id="cupon-btn"
+                                    class="btn join-item text-white text-lg font-semibold bg-green-500 ">Apply</button>
+
+                            </div>
+                            <ul class="text-red-500 font-bold" id="create-container1">
+
                             </ul>
+                            <div class="flex justify-between ">
+                                <h6 class="text-lg inter-font font-semibold text-black">Grand Total</h6>
+                                <h6 class="text-lg inter-font font-semibold text-black">BDT <span
+                                        id="grand-total">0</span></h6>
+
+                            </div>
 
                         </div>
-                       
-                            <hr class="border-dashed text-gray-400 border-1 my-6">
-                        
-                        <div class="flex justify-between mb-4">
-                            <h6 class="text-lg inter-font font-semibold text-black">Total Price</h6>
-                            <h6 class="text-lg inter-font font-semibold text-black">BDT <span id="total-Price" >0</span></h6>
-                            
-                           
+                        <div class="mb-4">
+                            <label for="" class="text-lg font-bold text-black mb-2">Passenger Name*</label>
+                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
                         </div>
-                        <div class="mb-4 join w-full">
-                            
-                                <input id="cupon-input" type="text" class="input input-bordered join-item bg-white border-none w-full" placeholder="Have any coupon?" />
-                                <button id="cupon-btn" class="btn join-item text-white text-lg font-semibold bg-green-500">Apply</button>
-                              
+                        <div class="mb-4">
+                            <label for="" class="text-lg font-bold text-black mb-2">Phone Number*</label>
+                            <input type="number" placeholder="Enter your phone number"
+                                class="input input-bordered w-full" />
                         </div>
-                        <div class="flex justify-between ">
-                            <h6 class="text-lg inter-font font-semibold text-black">Grand Total</h6>
-                            <h6 class="text-lg inter-font font-semibold text-black">BDT<span id="grand-total" >0</span></h6>
-                            
-                           
+                        <div class="mb-4">
+                            <label for="" class="text-lg font-bold text-black mb-2">Email ID</label>
+                            <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
                         </div>
 
+                        <div>
+
+                            <button class="btn bg-green-500 text-white text-xl font-extrabold rounded-2xl w-full mb-4"
+                                onclick="my_modal_5.showModal()">Next</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box flex flex-col justify-center align-middle items-center py-10">
+                                    <div>
+                                        <img src="images/success.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-lg">SUCCESS</h3>
+                                    <p class="py-4 text-center">Thank you for Booking Our Bus Seats.<br>
+                                        We are working hard to find the best service and deals for you.</p>
+                                    <p class="py-4">Shortly you will find a confirmation in your email.</p>
+
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        class="btn bg-green-500 text-white text-xl rounded-3xl font-extrabold px-24">Continue</button>
+
+                                </div>
+                        </div>
+                        </dialog>
+
+                        <div class="flex justify-around">
+                            <a class="link">Terms and Conditions</a>
+                            <a class="link">Cancellation Policy</a>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="" class="text-lg font-bold text-black mb-2">Passenger Name*</label>
-                    <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
-                    </div>
-                    <div class="mb-4">
-                        <label for="" class="text-lg font-bold text-black mb-2">Phone Number*</label>
-                    <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
-                    </div>
-                    <div class="mb-4">
-                        <label for="" class="text-lg font-bold text-black mb-2">Email ID</label>
-                    <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
-                    </div>
-                    <button class="btn bg-green-500 text-white text-xl font-extrabold rounded-2xl w-full mb-4">Next</button>
-                    <div class="flex justify-around">
-                        <a class="link">Terms and Conditions</a>
-                        <a class="link">Cancellation Policy</a>
-                    </div>
+
                     
 
-                    </div>
-                    
+
                 </div>
+
+            </div>
             </div>
 
             <section>
