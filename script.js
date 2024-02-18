@@ -4,7 +4,7 @@ const economy = "Economy";
 const fixedPrice = 550;
 let totalPrice = 0;
 let grandTotal = 0;
-let couponApplied = false; // Initialize couponApplied
+let couponApplied = false;
 
 for (const btn of allBtn) {
     btn.addEventListener("click", function (e) {
@@ -22,7 +22,7 @@ for (const btn of allBtn) {
             document.getElementById("total-Price").innerText = transferPrice + parseInt(totalPrice);
 
             // Grand total
-            grandTotal = totalPrice; // Initially, grand total is same as total price
+            grandTotal = totalPrice; 
 
             // Seat List
             const seatNo = btn.textContent.trim();
@@ -51,14 +51,14 @@ for (const btn of allBtn) {
 }
 
 const cuponBtn = document.getElementById('cupon-btn');
-const couponContainer = document.getElementById('coupon-container'); // Added
+const couponContainer = document.getElementById('coupon-container'); 
 
 cuponBtn.addEventListener('click', function () {
     const cuponCode = document.getElementById('cupon-input').value;
     const totalSeats = parseInt(document.getElementById('totalTicket').innerText);
 
-    if (totalSeats >= 4) { // Check if at least 4 seats are booked
-        if (cuponCode === "NEW15") { // Fixed the coupon code comparison
+    if (totalSeats >= 4) { 
+        if (cuponCode === "NEW15") { 
             
             if (!couponApplied) {
                 const createList1 = document.getElementById('create-container1');
@@ -73,13 +73,13 @@ cuponBtn.addEventListener('click', function () {
                 li.appendChild(p2);
                 createList1.appendChild(li);
                 const grandTotalElement = document.getElementById('grand-total');
-                grandTotal = totalPrice - discountPrice; // Apply discount to the total price
+                grandTotal = totalPrice - discountPrice;
                 grandTotalElement.innerText = grandTotal;
                 document.getElementById('cupon-input').value = "";
                 const cuponInput = document.getElementById('cupon-input1');
                 cuponInput.classList.add('hidden');
                 couponApplied = true;
-                couponContainer.style.display = 'none'; // Hide coupon input div
+                couponContainer.style.display = 'none'; 
             } else {
                 alert("Coupon code already applied!");
             }
@@ -100,13 +100,13 @@ cuponBtn.addEventListener('click', function () {
                 li.appendChild(p2);
                 createList1.appendChild(li);
                 const grandTotalElement = document.getElementById('grand-total');
-                grandTotal = totalPrice - discountPrice; // Apply discount to the total price
+                grandTotal = totalPrice - discountPrice; 
                 grandTotalElement.innerText = grandTotal;
                 document.getElementById('cupon-input').value = "";
                 const cuponInput = document.getElementById('cupon-input1');
                 cuponInput.classList.add('hidden');
                 couponApplied = true;
-                couponContainer.style.display = 'none'; // Hide coupon input div
+                couponContainer.style.display = 'none'; 
             } else {
                 alert("Coupon code already applied!");
             }
