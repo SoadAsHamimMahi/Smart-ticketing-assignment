@@ -125,12 +125,12 @@
                 <p class="text-center text-black text-lg w-4/6 mx-auto mt-5">Yes, you can run unit tests and view the
                     results directly within the app. The integrated testing features allow for a streamlined .</p>
 
-                    <!-- Buss name and seats -->
+                <!-- Buss name and seats -->
                 <div class="bg-white rounded-3xl mt-12 border-none">
 
                     <div class="flex w-full">
                         <div class="w-3/4 p-8">
-                            
+
                             <div class="flex justify-between">
                                 <div class="flex justify-between">
                                     <div>
@@ -211,39 +211,167 @@
 
 
                 <!-- Bus seats and form -->
-               
-                <div>
+
+                <div class="bg-white rounded-3xl mt-7 flex">
                     <!-- seats -->
-                    <div class="w-3/5">
-                        <h3>Select Your Seat</h3>
-                        <hr class="border-dashed text-gray-400 border-1 my-6">
+                    <div class="p-8 w-3/5">
+                        <div class="">
+                            <h3 class="text-black text-2xl font-semibold mb-4">Select Your Seat</h3>
+                            <hr class="border-dashed text-gray-400 border-1 my-6">
 
-                        <div class="w-full flex justify-between">
+                            <div class="w-full flex justify-between">
 
-                            <div class="flex">
-                                <img src="images/seat-gray.png" alt="">
-                                <p class="text-center">Available</p>
+                                <div class="flex gap-1">
+                                    <img src="images/seat-gray.png" alt="">
+                                    <p class="text-center">Available</p>
+                                </div>
+
+                                <div class="flex gap-1">
+                                    <img src="images/seat-green-filled.png" alt="">
+                                    <p>Selected</p>
+                                </div>
+
+
                             </div>
+                            <hr class="border-dashed text-gray-400 border-1 my-6">
 
-                            <div class="flex">
-                                <img src="images/seat-green-filled.png" alt="">
-                                <p>Selected</p>
+                            <div class="grid grid-cols-2 gap-24">
+                                <div class="grid grid-cols-2 gap-4">
+
+                                    <button class="invisible btn">0</button>
+                                    <button class="invisible btn">0</button>
+
+                                    <button class="btn">A1</button>
+                                    <button class="btn">A2</button>
+
+                                    <button class="btn">B1</button>
+                                    <button class="btn">B2</button>
+
+                                    <button class="btn">C1</button>
+                                    <button class="btn">C2</button>
+
+                                    <button class="btn">D1</button>
+                                    <button class="btn">D2</button>
+
+                                    <button class="btn">E1</button>
+                                    <button class="btn">E2</button>
+
+                                    <button class="btn">F1</button>
+                                    <button class="btn">F2</button>
+
+                                    <button class="btn">G1</button>
+                                    <button class="btn">G2</button>
+
+                                    <button class="btn">H1</button>
+                                    <button class="btn">H2</button>
+
+                                    <button class="btn">I1</button>
+                                    <button class="btn">I2</button>
+
+                                    <button class="btn">J1</button>
+                                    <button class="btn">J2</button>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4">
+
+                                    <button></button>
+                                    <button class="btn"><img src="images/wheel.png" alt=""></button>
+
+                                    <button class="btn">A3</button>
+                                    <button class="btn">A4</button>
+                                    <button class="btn">B3</button>
+                                    <button class="btn">B4</button>
+                                    <button class="btn">C3</button>
+                                    <button class="btn">C4</button>
+                                    <button class="btn">D3</button>
+                                    <button class="btn">D4</button>
+                                    <button class="btn">E3</button>
+                                    <button class="btn">E4</button>
+                                    <button class="btn">F3</button>
+                                    <button class="btn">F4</button>
+                                    <button class="btn">G3</button>
+                                    <button class="btn">G4</button>
+                                    <button class="btn">H3</button>
+                                    <button class="btn">H4</button>
+                                    <button class="btn">I3</button>
+                                    <button class="btn">I4</button>
+                                    <button class="btn">J3</button>
+                                    <button class="btn">J4</button>
+                                </div>
                             </div>
-
-                            
                         </div>
-                        <hr class="border-dashed text-gray-400 border-1 my-6">
+
                     </div>
-    
-    
+
                     <!-- Select seats form -->
-                    <div>
-    
+                    <div class="lg:w-2/5 p-8">
+                        <h3 class="text-black text-2xl font-semibold mb-4">Select Your Seat</h3>
+                        <hr class="border-dashed text-gray-400 border-1 my-6">
+
+                    <div class="bg-gray-50 rounded-2xl p-8 mb-4">
+                        <div class="flex justify-between mb-4">
+                            <h6 class="text-lg font-inter font-semibold text-black">Seat <span id="ticket-count" class="text-white bg-green-500 px-2 rounded-md">0</span></h6>
+                            <h6 class="text-lg font-inter font-semibold text-black">Class</h6>
+                            <h6 class="text-lg font-inter font-semibold text-black">Price</h6>
+                        </div>
+                
+                        
+                            <hr class="border-dashed text-gray-400 border-1 my-6">
+                        
+                        <div id="container">
+                            <ul id="create-container">
+
+                            </ul>
+
+                        </div>
+                       
+                            <hr class="border-dashed text-gray-400 border-1 my-6">
+                        
+                        <div class="flex justify-between mb-4">
+                            <h6 class="text-lg inter-font font-semibold text-black">Total Price</h6>
+                            <h6 class="text-lg inter-font font-semibold text-black">BDT<span id="total" >0</span></h6>
+                            
+                           
+                        </div>
+                        <div class="mb-4 join w-full">
+                            
+                                <input id="cupon-input" type="text" class="input input-bordered join-item bg-white border-none w-full" placeholder="Have any coupon?" />
+                                <button id="cupon-btn" class="btn join-item text-white text-lg font-semibold bg-green-500">Apply</button>
+                              
+                        </div>
+                        <div class="flex justify-between ">
+                            <h6 class="text-lg inter-font font-semibold text-black">Grand Total</h6>
+                            <h6 class="text-lg inter-font font-semibold text-black">BDT<span id="grand-total" >0</span></h6>
+                            
+                           
+                        </div>
+
                     </div>
+                    <div class="mb-4">
+                        <label for="" class="text-lg font-bold text-black mb-2">Passenger Name*</label>
+                    <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="" class="text-lg font-bold text-black mb-2">Phone Number*</label>
+                    <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="" class="text-lg font-bold text-black mb-2">Email ID</label>
+                    <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
+                    </div>
+                    <button class="btn bg-green-500 text-white text-xl font-extrabold rounded-2xl w-full mb-4">Next</button>
+                    <div class="flex justify-around">
+                        <a class="link">Terms and Conditions</a>
+                        <a class="link">Cancellation Policy</a>
+                    </div>
+                    
+
+                    </div>
+                    
                 </div>
             </div>
 
-        <section>
+            <section>
 
 
     </main>
